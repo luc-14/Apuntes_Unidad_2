@@ -78,8 +78,17 @@ $$P(t) = (1-t)^3 P_0 + 3t(1-t)^2 P_1 + 3t^2(1-t) P_2 + t^3 P_3$$
 
 Si modificas un solo punto de control, toda la curva cambia de forma (control global).
 # 2.3.2. B-spline.
-(colocar el ejercicio dibujo de la animación)
+Las B-splines resuelven el problema del "control global" de las curvas de Bézier. Permiten crear curvas complejas uniendo múltiples segmentos. Su principal ventaja es el control local: si mueves un punto de control en una B-spline, solo se altera la sección de la curva cercana a ese punto, dejando el resto intacto. Además, la curva no necesariamente pasa por ninguno de sus puntos de control.
 
+Ejercicio Práctico: Dibujo de Animación
+
+
+https://github.com/user-attachments/assets/4306a54e-b1e1-451b-82f0-df8cb6950b49
+
+
+Las curvas paramétricas son esenciales en la animación por computadora. Un ejercicio clásico consiste en animar un objeto (como una gota o un vehículo) para que siga un trayecto curvo fluido.
+
+En lugar de calcular el movimiento manual, se define una curva de Bézier invisible. En el bucle de animación, el software incrementa el valor de $t$ desde $0.0$ hasta $1.0$ a lo largo del tiempo. En cada fotograma, se evalúa la ecuación paramétrica de la curva con el $t$ actual para obtener la coordenada $(x, y)$ exacta donde debe redibujarse el objeto.
 # 2.4. Fractales
 
 # 2.5. Uso y creación de fuentes de texto.
