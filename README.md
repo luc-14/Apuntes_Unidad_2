@@ -90,5 +90,16 @@ Las curvas paramétricas son esenciales en la animación por computadora. Un eje
 
 En lugar de calcular el movimiento manual, se define una curva de Bézier invisible. En el bucle de animación, el software incrementa el valor de $t$ desde $0.0$ hasta $1.0$ a lo largo del tiempo. En cada fotograma, se evalúa la ecuación paramétrica de la curva con el $t$ actual para obtener la coordenada $(x, y)$ exacta donde debe redibujarse el objeto.
 # 2.4. Fractales
+Un fractal es un objeto geométrico cuya estructura básica se repite a diferentes escalas. A diferencia de la geometría euclidiana clásica (líneas, círculos), la geometría fractal modela formas irregulares y complejas de la naturaleza, como costas, nubes, montañas o vasos sanguíneos.
 
+Sus características principales en graficación son:
+
+Autosimilitud: Si haces "zoom" en una parte del fractal, esta se verá igual o muy similar a la forma completa.
+
+Generación recursiva: Se programan mediante funciones recursivas o algoritmos iterativos simples que se ejecutan cientos o miles de veces (ej. Conjunto de Mandelbrot, Copo de nieve de Koch).
 # 2.5. Uso y creación de fuentes de texto.
+En la graficación 2D, el texto no es solo información, es una representación visual que debe renderizarse en pantalla. Las fuentes se dividen principalmente en dos categorías:
+1. Fuentes de Mapa de Bits (Raster fonts): Cada carácter está predefinido como una cuadrícula de píxeles estática. Son rápidas de procesar, pero si se escalan (se hacen más grandes), se "pixelan" y pierden calidad.
+2. Fuentes Vectoriales (Outline fonts): Formatos modernos como TrueType (TTF) o OpenType (OTF). En lugar de guardar píxeles, estas fuentes guardan las ecuaciones matemáticas (precisamente curvas de Bézier o B-splines) que forman el contorno de cada letra.
+
+VENTAJA: Cuando el motor gráfico necesita renderizar una letra, escala los puntos de control matemáticamente y luego rellena el interior. Esto permite que el texto sea infinitamente escalable sin perder resolución.
