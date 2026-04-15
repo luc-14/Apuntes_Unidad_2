@@ -9,8 +9,11 @@ Factores: $T_x$ (desplazamiento en $X$) y $T_y$ (desplazamiento en $Y$).
 # 2.1.2. Escalamiento.
 El escalamiento cambia el tamaño de un objeto. Se logra multiplicando las coordenadas de cada vértice por factores de escala. Si el factor es mayor a 1, el objeto crece; si está entre 0 y 1, se encoge. Si los factores en $X$ e $Y$ son diferentes, el objeto se deforma (escalamiento diferencial).
 Factores: $S_x$ (escala en $X$) y $S_y$ (escala en $Y$).
+
 Ecuaciones algebraicas:
+
 $x' = x \cdot S_x$
+
 $y' = y \cdot S_y$
 # 2.1.3. Rotación.
 
