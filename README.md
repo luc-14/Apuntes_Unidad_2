@@ -57,3 +57,29 @@ Además de las tres fundamentales, existen otras transformaciones importantes en
 Reflexión (Espejo): Genera una imagen simétrica del objeto respecto a un eje (por ejemplo, invertir el signo de las coordenadas $X$ crea una reflexión respecto al eje $Y$).
 
 Sesgo (Shear / Deformación): Distorsiona la forma de un objeto deslizando sus capas internas, convirtiendo, por ejemplo, un cuadrado en un paralelogramo.
+
+# 2.2.Representación matricial de las transformaciones bidimensionales.
+Ejercicio Práctico: Control con Teclas de Dirección
+
+La representación matricial es la base matemática para la interactividad en el software. Para implementar un objeto controlado por las flechas del teclado:
+
+1. Se define una variable de estado para la posición del objeto (por ejemplo, una matriz de vértices).
+2. Se configura un "Listener" (escuchador de eventos) en el entorno de desarrollo que detecte la pulsación de teclas.
+3. Al presionar una tecla (ej. Flecha Derecha), se construye una matriz de traslación donde $T_x = \text{velocidad}$ y $T_y = 0$.
+4. Se multiplica la matriz de los vértices del objeto por esta matriz de traslación y se invoca la función de repintado (repaint(), update(), etc.) para actualizar la pantalla, creando la ilusión de movimiento.
+# 2.3. Trazo de líneas curvas.
+En graficación, las curvas no se dibujan pixel por pixel de forma manual, sino que se generan algorítmicamente mediante ecuaciones paramétricas. Se utilizan "puntos de control" para influir en la forma de la curva, evaluando un parámetro $t$ que va de $0$ a $1$.
+# 2.3.1. Bézier.
+Desarrolladas por Pierre Bézier para el diseño automotriz, estas curvas interpolan entre un conjunto de puntos de control. La curva siempre pasa por el primer y último punto de control, mientras que los puntos intermedios actúan como "imanes" que tiran de la curva hacia ellos.La ecuación para una curva de Bézier cúbica (4 puntos de control: $P_0, P_1, P_2, P_3$), basada en los polinomios de Bernstein, es:
+
+$$P(t) = (1-t)^3 P_0 + 3t(1-t)^2 P_1 + 3t^2(1-t) P_2 + t^3 P_3$$
+
+(Donde $0 \le t \le 1$).
+
+Si modificas un solo punto de control, toda la curva cambia de forma (control global).
+# 2.3.2. B-spline.
+(colocar el ejercicio dibujo de la animación)
+
+# 2.4. Fractales
+
+# 2.5. Uso y creación de fuentes de texto.
