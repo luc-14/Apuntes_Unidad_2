@@ -2,9 +2,12 @@
 # Unidad 2 Graficación2D.
 
 # 2.1. Transformación bidimensional.
-En la graficación por computadora, una transformación bidimensional (2D) es una operación matemática que altera la posición, tamaño, orientación o forma de un objeto geométrico dentro de un plano cartesiano de dos dimensiones ($x$, $y$).Estas transformaciones se aplican a los vértices que componen un objeto (por ejemplo, puntos, líneas o polígonos) para generar una nueva vista o posición en la pantalla sin tener que redibujar el objeto desde cero. Matemáticamente, el manejo eficiente de estas transformaciones requiere el uso de álgebra lineal, específicamente de vectores y matrices.Para poder combinar múltiples transformaciones (como rotar un objeto y luego moverlo) mediante una simple multiplicación de matrices, se utiliza un concepto matemático llamado coordenadas homogéneas. 
+En la graficación por computadora, una transformación bidimensional (2D) es una operación matemática que altera la posición, tamaño, orientación o forma de un objeto geométrico dentro de un plano cartesiano de dos dimensiones ($x$, $y$).
+
+Estas transformaciones se aplican a los vértices que componen un objeto (por ejemplo, puntos, líneas o polígonos) para generar una nueva vista o posición en la pantalla sin tener que redibujar el objeto desde cero. Matemáticamente, el manejo eficiente de estas transformaciones requiere el uso de álgebra lineal, específicamente de vectores y matrices.Para poder combinar múltiples transformaciones (como rotar un objeto y luego moverlo) mediante una simple multiplicación de matrices, se utiliza un concepto matemático llamado coordenadas homogéneas. 
 # 2.1.1. Traslación.
 La traslación consiste en mover un objeto de una posición a otra en el plano, sumando distancias a las coordenadas originales a lo largo de los ejes $X$ e $Y$.
+
 Factores:
 $T_x$ (desplazamiento en $X$) y $T_y$ (desplazamiento en $Y$).
 
