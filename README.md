@@ -103,3 +103,13 @@ En la graficación 2D, el texto no es solo información, es una representación 
 2. Fuentes Vectoriales (Outline fonts): Formatos modernos como TrueType (TTF) o OpenType (OTF). En lugar de guardar píxeles, estas fuentes guardan las ecuaciones matemáticas (precisamente curvas de Bézier o B-splines) que forman el contorno de cada letra.
 
 VENTAJA: Cuando el motor gráfico necesita renderizar una letra, escala los puntos de control matemáticamente y luego rellena el interior. Esto permite que el texto sea infinitamente escalable sin perder resolución.
+# FUENTES
+Hearn, D., & Baker, M. P. (2006). Gráficas por computadora con OpenGL (3.ª ed.). Pearson Educación.
+
+Foley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (1996). Computer graphics: Principles and practice (2.ª ed.). Addison-Wesley.
+
+Shirley, P., Marschner, S., Ashikhmin, M., Boulos, S., Corsini, M., DeCoro, C., Hoffman, N., Jensen, H. W., Kelley, C., & Kensler, A. (2009). Fundamentals of computer graphics (3.ª ed.). A K Peters/CRC Press.
+
+Rogers, D. F., & Adams, J. A. (1990). Mathematical elements for computer graphics (2.ª ed.). McGraw-Hill.
+
+Mandelbrot, B. B. (1983). The fractal geometry of nature. W. H. Freeman and Company.
