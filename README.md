@@ -37,3 +37,23 @@ $x' = x \cos(\theta) - y \sin(\theta)$
 
 $y' = x \sin(\theta) + y \cos(\theta)$
 # 2.1.4. Sesgado.
+El sesgado es una transformación que distorsiona la forma de un objeto deslizando sus capas internas, como si empujaras la parte superior de una caja rectangular hasta convertirla en un paralelogramo. Matemáticamente, desplaza las coordenadas de un eje en función del valor de la coordenada del otro eje.
+
+Sesgado en el eje $X$: La coordenada $x$ cambia dependiendo de $y$.
+
+$x' = x + sh_x \cdot y$
+
+$y' = y$
+
+Sesgado en el eje $Y$: La coordenada $y$ cambia dependiendo de $x$.
+
+$x' = x$
+
+$y' = y + sh_y \cdot x$
+
+# Transformaciones Adicionales
+Además de las tres fundamentales, existen otras transformaciones importantes en el diseño y renderizado gráfico:
+
+Reflexión (Espejo): Genera una imagen simétrica del objeto respecto a un eje (por ejemplo, invertir el signo de las coordenadas $X$ crea una reflexión respecto al eje $Y$).
+
+Sesgo (Shear / Deformación): Distorsiona la forma de un objeto deslizando sus capas internas, convirtiendo, por ejemplo, un cuadrado en un paralelogramo.
