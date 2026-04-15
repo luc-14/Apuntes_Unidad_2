@@ -27,5 +27,5 @@ $x' = x \cdot S_x$
 
 $y' = y \cdot S_y$
 # 2.1.3. Rotación.
-
+La rotación gira un objeto alrededor de un punto pivote (por defecto, el origen del plano cartesiano) en un ángulo específico $\theta$. En matemáticas de graficación, los ángulos positivos generalmente representan una rotación en sentido antihorario.
 # 2.1.4. Sesgado.
